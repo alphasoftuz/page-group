@@ -1,5 +1,5 @@
 @php
-    $content = $priceList->content;
+    $content = $priceList?->content ?: [];
 @endphp
 
 <section id="price">
