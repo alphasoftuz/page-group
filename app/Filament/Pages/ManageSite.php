@@ -20,6 +20,7 @@ class ManageSite extends SettingsPage
             Forms\Components\TextInput::make('site_name')
                 ->label('Наименование сайта')
                 ->required(),
+
             Forms\Components\TextInput::make('site_description_uz')
                 ->label('Описание сайта (UZ)')
                 ->columnSpan(2)
@@ -34,16 +35,20 @@ class ManageSite extends SettingsPage
                 ->label('Логотип сайта')
                 ->image()
                 ->required(),
+
             Forms\Components\FileUpload::make('og_image')
                 ->label('Изображение для соц. сетей')
                 ->image()
                 ->required(),
+
             Forms\Components\TextInput::make('phone')
                 ->label('Телефон')
                 ->required(),
+
             Forms\Components\TextInput::make('email')
                 ->label('Email')
                 ->required(),
+
             Forms\Components\TextInput::make('address_uz')
                 ->label('Адрес (UZ)')
                 ->required(),
