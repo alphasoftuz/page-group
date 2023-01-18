@@ -4,7 +4,7 @@
     </h1>
     <x-data-content-tools file="news.html">
         <p class="text">
-            Новости и события клининговой компании CleanField
+            Новости и события клининговой компании Page Group
         </p>
     </x-data-content-tools>
     <div class="container">

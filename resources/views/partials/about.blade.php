@@ -1,4 +1,4 @@
-<section id="why_cleanfield">
+<section id="why-page-group">
     <x-data-content-tools file="why-cleanfield.html">
         <h1 class="title">
             Почему выбирают

@@ -19,7 +19,7 @@
                 </p>
             </x-data-content-tools>
 
-            <a class="btn-hov-eff" href="#">
+            <a class="btn-hov-eff" href="#leave-form">
                 <x-data-content-tools file="showcase-hero-button.html">
                     <div data-ce-tag="p">@lang('Leave a request')</div>
                 </x-data-content-tools>

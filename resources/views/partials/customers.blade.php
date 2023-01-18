@@ -4,7 +4,7 @@
             @lang('Our clients')
         </h1>
         <div class="client-body">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselOurClients" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     @foreach($customers as $customer)
                         <div class="carousel-item {{ $loop->index === 0 ? 'active' : '' }}">
@@ -21,13 +21,13 @@
                     @endforeach
                 </div>
                 <button class="carousel-control-prev prev " type="button"
-                        data-bs-target="#carouselExampleControls"
+                        data-bs-target="#carouselOurClients"
                         data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next next" type="button"
-                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        data-bs-target="#carouselOurClients" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>

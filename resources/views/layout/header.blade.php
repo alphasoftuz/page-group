@@ -1,9 +1,9 @@
 @php
     $locales = [
         'ru' => "O'zbek tili 🇺🇿",
-        'uz' => "Русский язык 🇷🇺",
+        'uz' => 'Русский язык 🇷🇺',
     ];
-
+    
     $langToSwitch = app()->getLocale() === 'ru' ? 'uz' : 'ru';
 @endphp
 
@@ -33,14 +33,14 @@
                     {{ $locales[app()->getLocale()] }}
                 </a>
 
-                <a class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" role="button">
+                <a class="btn button" data-bs-toggle="modal" data-bs-target="#callModalToggle" role="button">
                     @lang('Order a call')
                 </a>
             </div>
             <div class="drop-menu">
                 <button class="navbar-toggler dropDown collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="fas x-menu fa-bars"></i>
                 </button>
             </div>
@@ -48,7 +48,7 @@
         <div class="header-bottom">
             <nav>
                 <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
-                    <li><a href="/#why_cleanfield">@lang('About us')</a></li>
+                    <li><a href="/#why-page-group">@lang('About us')</a></li>
                     <li><a href="/#n-usluga">@lang('Services')</a></li>
                     <li><a href="/#price">@lang('Prices')</a></li>
                     <li><a href="/#our-client">@lang('Our clients')</a></li>
@@ -68,7 +68,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <ul class="mini-nav">
-                    <li><a href="/#why_cleanfield">@lang('About us')</a></li>
+                    <li><a href="/#why-page-group">@lang('About us')</a></li>
                     <li><a href="/#n-usluga">@lang('Services')</a></li>
                     <li><a href="/#price">@lang('Prices')</a></li>
                     <li><a href="/#our-client">@lang('Our clients')</a></li>
@@ -85,13 +85,13 @@
 
 {{-- Modal --}}
 <div class="header-modal">
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-         tabindex="-1">
+    <div class="modal fade" id="callModalToggle" aria-hidden="true" aria-labelledby="callModalToggleLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-            <span class="close-bg">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </span>
+                <span class="close-bg">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </span>
                 <div class="modal-body">
                     <form method="POST" action="{{ route('form') }}">
                         @csrf

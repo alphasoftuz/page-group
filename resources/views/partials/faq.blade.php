@@ -8,22 +8,21 @@
         </p>
     </x-data-content-tools>
     <div class="container">
-        <div class="accordion  accordion-flush" id="accordionFlushExample">
-            @foreach($faqs as $faq)
+        <div class="accordion accordion-flush" id="accordionFAQ">
+            @foreach ($faqs as $faq)
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
+                    <h2 class="accordion-header" id="faq-heading-{{$faq->id}}">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="{{ '#flush-collapseOne' . $faq->id }}">
+                            data-bs-target="#faq-collapse-{{$faq->id}}">
                             {{ $faq->question }}
                             <span class="plus">
-                      <div class="row"></div>
-                      <div class="col"></div>
-                    </span>
+                                <div class="row"></div>
+                                <div class="col"></div>
+                            </span>
                         </button>
                     </h2>
-                    <div id="{{ 'flush-collapseOne' . $faq->id }}" class="accordion-collapse collapse"
-                         aria-labelledby="flush-headingOne"
-                         data-bs-parent="#accordionFlushExample">
+                    <div id="faq-collapse-{{$faq->id}}" class="accordion-collapse collapse"
+                        aria-labelledby="faq-heading-{{$faq->id}}" data-bs-parent="#accordionFAQ">
                         <div class="accordion-body">
                             {{ $faq->answer }}
                         </div>
