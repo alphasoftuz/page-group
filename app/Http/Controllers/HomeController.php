@@ -18,9 +18,12 @@ class HomeController extends Controller
         $reviews = Review::all();
         $faqs = Faq::all();
         $posts = Post::query()->take(2)->get();
+
         $priceList = PriceList::query()
             ->where('language', app()->getLocale())
             ->first();
+
+        $priceList->content = collect($priceList->content)->sortBy('name', SORT_NATURAL)->values()->all();
 
         return view('home', compact(
             'services',
