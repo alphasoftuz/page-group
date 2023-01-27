@@ -15,7 +15,7 @@
             <div class="stati-cards">
                 @foreach($posts as $post)
                     <a href="{{ route('posts.show', $post->id) }}" class="stati-card">
-                        <img src="{{ asset($post->image) }}" alt="">
+                        <img src="{{ storage_url($post->image) }}" alt="">
                         <h2>{{ $post->title }}</h2>
                         <p>{{ $post->excerpt }}</p>
                     </a>
