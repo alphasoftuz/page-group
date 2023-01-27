@@ -47,7 +47,7 @@
                         </div>
                         <div class="footer-services">
                             <ul>
-                                <li><a href="#why-page-group">@lang('About us')</a></li>
+                                <li><a href="#why_cleanfield">@lang('About us')</a></li>
                                 <li><a href="#reviews">@lang('Reviews')</a></li>
                                 <li><a href="#kontakt">@lang('Contacts')</a></li>
                                 <li><a href="#question">@lang('Questions')</a></li>
